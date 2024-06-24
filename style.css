@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #DECDAC;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.container{
+    background: #FEFAF3;
+     width: 485px; 
+     height: 243px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 17px;
+     box-shadow:0px 0px 5px 0px #626060;
+     /* position: relative;
+     z-index: 2; */
+}
+
+
+ .container button{
+    background: #EBBF53;
+    width: 285px;
+    height: 63px;
+    font-size: 28.18px;
+    color: #FEFAF3;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer
+}
+
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+     /* transform: scale(0); */
+     transition: all 0.3s ease-in-out;
+
+}
+
+.active{
+    opacity: 1;
+    pointer-events: auto;
+    
+    /* transform: scale(1); */
+}
+
+.container2{
+     background: #FEFAF3;
+     width: 690px; 
+     max-width: 90%;
+     height:346px;
+     border-radius: 17px;
+     box-shadow:0px 0px 5px 0px #626060;
+     position: absolute;
+     transform: translateY(-100%);
+     transition: all 0.3s ease-in-out;
+
+}
+
+.overlay.active .container2{
+    transform: translateY(0px);
+}
+
+
+.Images{
+    position: relative;
+}
+
+.Images :nth-child(1){
+   width: 213px;
+   height: 218.1px;
+   position: absolute;
+   left:50px;
+   top:-32px
+
+}
+
+.Images :nth-child(2){
+    position: absolute;
+    top: 95px;
+    left: 77px;
+
+}
+
+.Images :nth-child(3){
+    position: absolute;
+    left: 187px;
+    top: 19px;
+
+}
+
+.Images :nth-child(4){
+    position: absolute;
+    left: 73px;
+    top: 7px;   
+}
+.Images :nth-child(5){
+    position: absolute;
+    right: 27px;
+    top: 20px;
+    cursor: pointer
+}
+
+.info{
+    position: absolute;
+    right: 48px;
+    top: 83px;
+
+}
+
+.btn{
+    position: absolute;
+    bottom: 42px;
+    left: 54px;
+
+}
+
+.btn input{
+    padding: 12px;
+    width: 381px;
+    height: 56px;
+    background: #EEE8DD;
+
+}
+
+.btn button{
+    width: 179px;
+    height: 56px;
+    background: #EBBF53;
+    font-size: 20px;
+    color: #FEFAF3;
+    border-radius:0 30px 30px 0;
+    border: 0;
+}
+
+
